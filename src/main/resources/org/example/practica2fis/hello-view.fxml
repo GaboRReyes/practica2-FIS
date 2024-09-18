@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.example.practica2fis.HelloController">
     <padding>
@@ -97,8 +98,7 @@
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="C6" layoutX="5" layoutY="5" />
         </StackPane>
-
-
     </GridPane>
+    <Button fx:id="salir" text="Salir" onAction="#onSalirBoton"/>
 
 </VBox>
