@@ -8,97 +8,98 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.example.practica2fis.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
     <ComboBox fx:id="cmb_tipo_persona" promptText="Selecciona"/>
-
+<TextField fx:id="txt_asiento_seleccionado" promptText="Escoge el asiento"/>
+    <Button fx:id="asignar_asiento_bton" onAction="#OnAsignarBtn" text="Escoger asiento"/>
     <StackPane GridPane.columnIndex="0" GridPane.rowIndex="0">
         <Polygon points="0, 0, 120, 0, 100, 20, 20, 20" fill="transparent" stroke="black" />
         <Label text="Escenario" layoutX="5" layoutY="5" />
     </StackPane>
 
     <GridPane hgap="5" vgap="5" alignment="CENTER">
-        <StackPane GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <StackPane fx:id="asientoA1" GridPane.columnIndex="0" GridPane.rowIndex="0">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="A1" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <StackPane fx:id="asientoA2" GridPane.columnIndex="1" GridPane.rowIndex="0">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="A2" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <StackPane fx:id="asientoA3" GridPane.columnIndex="0" GridPane.rowIndex="2">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="A3" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <StackPane fx:id="asientoA4" GridPane.columnIndex="1" GridPane.rowIndex="2">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="A4" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <StackPane fx:id="asientoA5" GridPane.columnIndex="0" GridPane.rowIndex="4">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="A5" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <StackPane fx:id="asientoA6" GridPane.columnIndex="1" GridPane.rowIndex="4">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="A6" layoutX="5" layoutY="5" />
         </StackPane>
 
 
-        <StackPane GridPane.columnIndex="5" GridPane.rowIndex="0">
+        <StackPane fx:id="asientoB1" GridPane.columnIndex="5" GridPane.rowIndex="0">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="B1" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="6" GridPane.rowIndex="0">
+        <StackPane fx:id="asientoB2" GridPane.columnIndex="6" GridPane.rowIndex="0">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="B2" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="5" GridPane.rowIndex="2">
+        <StackPane fx:id="asientoB3" GridPane.columnIndex="5" GridPane.rowIndex="2">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="B3" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <StackPane fx:id="asientoB4" GridPane.columnIndex="6" GridPane.rowIndex="2">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="B4" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="5" GridPane.rowIndex="4">
+        <StackPane fx:id="asientoB5" GridPane.columnIndex="5" GridPane.rowIndex="4">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="B5" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <StackPane fx:id="asientoB6" GridPane.columnIndex="6" GridPane.rowIndex="4">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="B6" layoutX="5" layoutY="5" />
         </StackPane>
 
 
 
-        <StackPane GridPane.columnIndex="10" GridPane.rowIndex="0">
+        <StackPane fx:id="asientoC1" GridPane.columnIndex="10" GridPane.rowIndex="0">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="C1" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="11" GridPane.rowIndex="0">
+        <StackPane fx:id="asientoC2" GridPane.columnIndex="11" GridPane.rowIndex="0">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="C2" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="10" GridPane.rowIndex="2">
+        <StackPane fx:id="asientoC3" GridPane.columnIndex="10" GridPane.rowIndex="2">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="C3" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="11" GridPane.rowIndex="2">
+        <StackPane fx:id="asientoC4" GridPane.columnIndex="11" GridPane.rowIndex="2">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="C4" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="10" GridPane.rowIndex="4">
+        <StackPane fx:id="asientoC5" GridPane.columnIndex="10" GridPane.rowIndex="4">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="C5" layoutX="5" layoutY="5" />
         </StackPane>
-        <StackPane GridPane.columnIndex="11" GridPane.rowIndex="4">
+        <StackPane fx:id="asientoC6" GridPane.columnIndex="11" GridPane.rowIndex="4">
             <Rectangle width="20" height="20" fill="transparent" stroke="black" />
             <Label text="C6" layoutX="5" layoutY="5" />
         </StackPane>
     </GridPane>
     <Button fx:id="salir" text="Salir" onAction="#onSalirBoton"/>
-
 </VBox>
