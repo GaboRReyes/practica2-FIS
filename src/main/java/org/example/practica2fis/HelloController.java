@@ -91,7 +91,7 @@ public class HelloController implements Initializable {
 
         if (!asientos_escogidos.contains(asientoSeleccionado) && asientosMap.containsKey(asientoSeleccionado)) {
             asientos_escogidos.add(asientoSeleccionado);
-            System.out.println(asientos_escogidos);
+            System.out.println("Los asientos ocupados son:" + asientos_escogidos);
 
             // Cambia el color del asiento seleccionado
             StackPane asiento = asientosMap.get(asientoSeleccionado);
